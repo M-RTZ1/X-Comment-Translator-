@@ -1,0 +1,163 @@
+:root {
+  --bg: #15202b;
+  --panel: #1e2732;
+  --text: #e7e9ea;
+  --muted: #71767b;
+  --accent: #1d9bf0;
+  --accent-hover: #1a8cd8;
+  --border: #38444d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 16px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Vazirmatn, Tahoma, "Segoe UI", sans-serif;
+  font-size: 13px;
+}
+
+header h1 {
+  margin: 0 0 2px;
+  font-size: 17px;
+}
+
+.sub {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 11px;
+  direction: ltr;
+  text-align: right;
+}
+
+.field {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.lbl {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+select,
+button {
+  font-family: inherit;
+  font-size: 13px;
+  border-radius: 8px;
+}
+
+select {
+  width: 100%;
+  padding: 8px 10px;
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  outline: none;
+}
+
+select:focus {
+  border-color: var(--accent);
+}
+
+.seg {
+  display: flex;
+  gap: 6px;
+}
+
+.seg label {
+  flex: 1;
+  display: block;
+  padding: 7px 4px;
+  text-align: center;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.seg input {
+  display: none;
+}
+
+.seg input:checked + span {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.hint {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.6;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+.check input {
+  accent-color: var(--accent);
+  width: 15px;
+  height: 15px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 9px 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button.primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+button.primary:hover {
+  background: var(--accent-hover);
+}
+
+button#restore {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+button#restore:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+#status {
+  min-height: 18px;
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+footer {
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+}

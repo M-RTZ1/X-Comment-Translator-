@@ -1,0 +1,91 @@
+/* Injected styles for X Comment Translator */
+
+#xtx-fab {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  z-index: 2147483646;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  background: #1d9bf0;
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 10px 14px;
+  font-family: Tahoma, "Segoe UI", Vazirmatn, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+}
+
+#xtx-fab:hover {
+  background: #1a8cd8;
+}
+
+#xtx-fab .xtx-fab-alt {
+  font-size: 9px;
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+#xtx-status {
+  position: fixed;
+  bottom: 78px;
+  right: 18px;
+  z-index: 2147483646;
+  max-width: 240px;
+  background: rgba(0, 0, 0, 0.82);
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-family: Tahoma, "Segoe UI", sans-serif;
+  font-size: 12px;
+  direction: rtl;
+}
+
+.xtx-wrap {
+  margin-top: 6px;
+}
+
+.xtx-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.xtx-tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: #1d9bf0;
+}
+
+.xtx-btn {
+  background: none;
+  border: none;
+  color: #71767b;
+  font-family: Tahoma, "Segoe UI", Vazirmatn, sans-serif;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.xtx-btn:hover {
+  color: #1d9bf0;
+  text-decoration: underline;
+}
+
+.xtx-body {
+  background: rgba(29, 155, 240, 0.07);
+  border-inline-start: 3px solid rgba(29, 155, 240, 0.55);
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-family: Vazirmatn, Tahoma, "Segoe UI", IRANSans, sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+}

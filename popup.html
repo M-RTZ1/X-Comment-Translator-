@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <title>X Comment Translator</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>ترجمه دیدگاه‌های X</h1>
+    <p class="sub">Bulk-translate X.com comments via Google Translate</p>
+  </header>
+
+  <label class="field">
+    <span class="lbl">زبان مقصد / Target language</span>
+    <select id="target">
+      <option value="fa" selected>فارسی — Persian</option>
+      <option value="ar">العربية — Arabic</option>
+      <option value="en">English</option>
+      <option value="tr">Türkçe — Turkish</option>
+      <option value="ur">اردو — Urdu</option>
+      <option value="he">עברית — Hebrew</option>
+      <option value="hi">हिन्दी — Hindi</option>
+      <option value="zh-CN">中文（简体）— Chinese</option>
+      <option value="ja">日本語 — Japanese</option>
+      <option value="ko">한국어 — Korean</option>
+      <option value="ru">Русский — Russian</option>
+      <option value="es">Español — Spanish</option>
+      <option value="fr">Français — French</option>
+      <option value="de">Deutsch — German</option>
+      <option value="pt">Português — Portuguese</option>
+      <option value="it">Italiano — Italian</option>
+      <option value="nl">Nederlands — Dutch</option>
+      <option value="pl">Polski — Polish</option>
+      <option value="uk">Українська — Ukrainian</option>
+      <option value="id">Bahasa Indonesia</option>
+      <option value="vi">Tiếng Việt — Vietnamese</option>
+      <option value="th">ไทย — Thai</option>
+    </select>
+  </label>
+
+  <div class="field">
+    <span class="lbl">حالت / Mode</span>
+    <div class="seg">
+      <label>
+        <input type="radio" name="mode" value="manual" checked />
+        <span>دستی / Manual</span>
+      </label>
+      <label>
+        <input type="radio" name="mode" value="auto" />
+        <span>خودکار / Auto</span>
+      </label>
+    </div>
+    <p class="hint" id="modeHint">در حالت خودکار، دیدگاه‌های جدید هم بی‌درنگ ترجمه می‌شوند.</p>
+  </div>
+
+  <label class="check">
+    <input type="checkbox" id="showOriginal" checked />
+    <span>نمایش هم‌زمان متن اصلی / Show original too</span>
+  </label>
+
+  <div class="actions">
+    <button id="go" class="primary">ترجمه دیدگاه‌ها</button>
+    <button id="restore">بازگردانی اصلی</button>
+  </div>
+
+  <p id="status"></p>
+
+  <footer>ترجمه رایگان از طریق سرویس عمومی Google Translate</footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
